@@ -1,0 +1,48 @@
+body{
+    background: rgb(117, 47, 47);
+    margin:0px;
+}
+
+div.row {
+    font-size: 0;
+}
+
+div.row div{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+div.brick{
+    background-color: blue;
+}
+
+div.coin{
+    background: url(img/coin.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#chomp{
+    background: url(img/chomp.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+div.empty{
+
+}
+
+div#score{
+    color: white;
+    position: absolute;
+    left: 500px;
+    top: 10px;
+    border: white 1px solid;
+    padding: 30px;
+}
