@@ -68,10 +68,10 @@ function displayworld(){
         output += "</div>"
     }
     document.getElementById('world').innerHTML = output;
+
 }
 function displayworld2(){
-    var output ='';
-
+    output ='';
     for(var i=0;i<world2.length;i++){
         output+="<div class='row'>\n"
         for(var j=0;j<world2[i].length;j++){
@@ -124,6 +124,12 @@ document.onkeydown = function(k){
         coins--
         displayScore();
         displayworld();
+        if(coins==0){
+            console.log("Ganaste!!!");
+            chomp.x=1
+            chomp.y=1
+            displayworld2();
+        }
     }
 
     else if(world[chomp.y][chomp.x]==3){
@@ -133,11 +139,8 @@ document.onkeydown = function(k){
         displayScore();
     }
     displayworld();
-    if(coins==0){
-        console.log("Ganaste!!!");
-        displayworld2();
-    }
     displayChomp();
+
 }
 
 
