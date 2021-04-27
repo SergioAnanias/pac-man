@@ -38,6 +38,13 @@ div.empty{
 
 }
 
+div#cherry{
+    background-image: url(img/ef08c19ead8c91e4c3de61a6bce03c41-aji-picante-plano.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div#score{
     color: white;
     position: absolute;
